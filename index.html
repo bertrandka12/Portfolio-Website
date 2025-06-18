@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bertrand Kalisa | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">BERTRAND<span class="highlight">KALISA</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn">Connect With Me</a>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello! I am <br /><span class="bold-name">Bertrand Kalisa</span></h1>
+      <h2 class="typing">a <span id="typing-text"></span><span class="cursor">|</span></h2>
+      <p>A computer science graduate with strong experience in data mining, ML, and backend systems. Passionate about building performant and secure software solutions.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn-outline">Connect with me</a>
+        <a href="RESUME_BERT.pdf" class="btn-outline" download>Download Resume</a>
+      </div>
+    </div>
+    <img src="profPic.jpeg" alt="Bertrand Kalisa" class="profile-pic" />
+  </header>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>Python</div><div>Java</div><div>SQL</div><div>C++</div><div>GitHub</div><div>Pandas</div><div>Scikit-Learn</div><div>Jupyter Notebooks</div><div>Tableau</div><div>PowerBI</div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Teaching Assistant - University of Arkansas</h3>
+        <p><em>Sept 2023 – Present</em></p>
+        <p>Helped students with grading, debugging ML models, and managing Agile-based projects.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Research Assistant Intern - AI Lab</h3>
+        <p><em>Jan 2022 – May 2022</em></p>
+        <p>Worked on biomedical image segmentation with PyTorch and TensorFlow.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>IT Support Technician</h3>
+        <p><em>Aug 2019 – Dec 2021</em></p>
+        <p>Provided technical support to over 500 students. Helped resolve OS/software issues.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Digit Recognition</h3>
+        <p>Neural network using batch training and forward/backpropagation. Achieved 85.82% accuracy.</p>
+      </div>
+      <div class="card">
+        <h3>Email Client App</h3>
+        <p>Android app with compose, inbox, and CRUD functionality using MVP architecture.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Have a question or want to work together? Send me a message and I’ll get back to you.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Write your message here" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Designed & Built by Bertrand Kalisa © 2025</p>
+  </footer>
+</body>
+</html>
