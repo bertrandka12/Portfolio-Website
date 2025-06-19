@@ -29,3 +29,20 @@ function erase() {
 document.addEventListener("DOMContentLoaded", () => {
   if (textArray.length) setTimeout(type, 500);
 });
+
+// Mobile nav toggle with animation
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+});
+
+// Close menu on link click (mobile)
+document.querySelectorAll('#nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    hamburger.classList.remove('active');
+  });
+});
